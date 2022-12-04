@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavenderblush;
+  font-family: Rubik, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-block: 16px;
+  background-color: blanchedalmond;
+  border-bottom: 2px solid silver;
+}
+
+header h1 {
+  color: black;
+  font-size: 1.625rem;
+}
+
+main {
+  padding: 32px;
+  text-align: center;
+}
+
+section.create-todo div {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  font-size: 1.0625rem;
+  gap: 16px;
+}
+
+.create-todo_label {
+  color: chocolate;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: chocolate;
+}
+
+.create-todo_input {
+  width: 75%;
+  font-size: 12px;
+  align-self: center;
+  padding: 4px 8px;
+  border: 2px solid chocolate;
+  border-radius: 4px;
+  background-color: aliceblue;
+}
+
+.create-todo_button {
+  width: max-content;
+  padding: 4px 16px;
+  margin: auto;
+  align-items: center;
+  border: 2px solid chocolate;
+  border-radius: 4px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.create-todo_input:focus-within,
+.create-todo_button:focus-within {
+  outline: 2px solid lime;
+}
